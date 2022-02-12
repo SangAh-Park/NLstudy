@@ -14,7 +14,7 @@ start = time.time()
 
 #리뷰 파일 읽어오기
 print('1) 말뭉치 데이터 읽기 시작')
-review_data = read_review_data('./ratings.txt')
+review_data = read_review_data('단어 임베딩/ratings.txt')
 print(len(review_data))
 print('1) 말뭉치 데이터 읽기 완료:', time.time()-start) #읽는 데 걸린 시간
 
@@ -26,7 +26,7 @@ print('2) 형태소에서 명사만 추출 완료:', time.time()-start)
 
 #word2vec 모델 학습
 print('3) word2vec 모델 학습 시작')
-model = Word2Vec(sentences=docs, size=200, window=4, hs=1, min_count=2, sg=1) 
+model = Word2Vec(sentences=docs, window=4, min_count=2, sg=1) 
 #size: 벡터 차원의 크기. hs: softmax 사용 시 1. min_count: 단어 최소 빈도 수 제한. sg: 0은 CBOW, 1은 skip-gram.
 print('3) word2vec 모델 학습 완료:', time.time()-start)
 
