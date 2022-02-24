@@ -1,0 +1,90 @@
+[debug] [2022-02-14T07:56:00.177Z] ----------------------------------------------------------------------
+[debug] [2022-02-14T07:56:00.178Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-02-14T07:56:00.179Z] CLI Version:   9.16.0
+[debug] [2022-02-14T07:56:00.179Z] Platform:      darwin
+[debug] [2022-02-14T07:56:00.179Z] Node Version:  v12.18.3
+[debug] [2022-02-14T07:56:00.180Z] Time:          Mon Feb 14 2022 16:56:00 GMT+0900 (GMT+09:00)
+[debug] [2022-02-14T07:56:00.180Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-14T07:56:00.241Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-14T07:56:00.241Z] > authorizing via signed-in user (hd13482@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/sangahpark
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using trend-bot-tkgr. 
+[debug] [2022-02-14T07:56:10.078Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/trend-bot-tkgr [none]
+[debug] [2022-02-14T07:56:10.716Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/trend-bot-tkgr 200
+[debug] [2022-02-14T07:56:10.716Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/trend-bot-tkgr {"projectId":"trend-bot-tkgr","projectNumber":"806695411016","displayName":"trend-bot-tkgr","name":"projects/trend-bot-tkgr","resources":{"hostingSite":"trend-bot-tkgr","realtimeDatabaseInstance":"trend-bot-tkgr-default-rtdb","storageBucket":"trend-bot-tkgr.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-02-14T07:56:10.718Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-14T07:56:10.718Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-14T07:56:11.193Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 14 Feb 2022 07:56:13 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-14T07:56:11.237Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/trend-bot-tkgr/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2022-02-14T07:56:12.380Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 14 Feb 2022 07:56:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-02-14T07:56:12.382Z] > refreshing access token with scopes: []
+[debug] [2022-02-14T07:56:12.382Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-14T07:56:12.634Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 14 Feb 2022 07:56:14 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-14T07:56:12.677Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/trend-bot-tkgr [none]
+[debug] [2022-02-14T07:56:13.061Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/trend-bot-tkgr 200
+[debug] [2022-02-14T07:56:13.061Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/trend-bot-tkgr {"projectId":"trend-bot-tkgr","projectNumber":"806695411016","displayName":"trend-bot-tkgr","name":"projects/trend-bot-tkgr","resources":{"hostingSite":"trend-bot-tkgr","realtimeDatabaseInstance":"trend-bot-tkgr-default-rtdb","storageBucket":"trend-bot-tkgr.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2022-02-14T07:56:13.062Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-14T07:56:13.062Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-14T07:56:13.564Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 14 Feb 2022 07:56:15 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-14T07:56:13.605Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/trend-bot-tkgr/locations/-/instances/trend-bot-tkgr-default-rtdb  
+ 
+[debug] [2022-02-14T07:56:14.533Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 14 Feb 2022 07:56:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2022-02-14T07:56:14.537Z] >>> HTTP REQUEST GET https://trend-bot-tkgr-default-rtdb.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2022-02-14T07:56:15.983Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Mon, 14 Feb 2022 07:56:17 GMT","content-type":"application/json; charset=utf-8","content-length":"121","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] ✔  Database Rules for trend-bot-tkgr-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2022-02-14T07:56:15.993Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-14T07:56:15.993Z] > authorizing via signed-in user (hd13482@gmail.com)
+[debug] [2022-02-14T07:56:15.993Z] [iam] checking project trend-bot-tkgr for permissions ["firebase.projects.get"]
+[debug] [2022-02-14T07:56:15.994Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/trend-bot-tkgr:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-02-14T07:56:16.436Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 14 Feb 2022 07:56:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=133","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-14T07:56:16.438Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/trend-bot-tkgr/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2022-02-14T07:56:16.439Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/trend-bot-tkgr/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2022-02-14T07:56:17.484Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 14 Feb 2022 07:56:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-14T07:56:17.565Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 14 Feb 2022 07:56:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
